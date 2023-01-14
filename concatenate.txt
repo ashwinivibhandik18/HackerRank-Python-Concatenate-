@@ -1,0 +1,15 @@
+#Concatenate
+
+
+import numpy
+lst1=[]
+lst2=[]
+n,m,p=map(int,input().split())
+for i in range(n):
+    lst1.append(list(map(int,input().split())))
+for j in range(m):
+    lst2.append(list(map(int,input().split())))
+print(numpy.concatenate((numpy.array(lst1),numpy.array(lst2))))
+    
+
+
